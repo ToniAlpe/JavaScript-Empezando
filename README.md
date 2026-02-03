@@ -15,8 +15,7 @@
 
 ## 📂 Estructura del repositorio
 Actualmente, el repositorio se organiza de la siguiente manera:
-* `/ejercicios`: Prácticas de lógica básica.
-* `/proyectos-pequeños`: Mini aplicaciones funcionales.
+* `/scripts/prueba.js`: Prácticas de JavaScript (sintaxis, ejercicios, notas...)
 
 ## ✍️ Notas de aprendizaje
 > "JavaScript no es solo hacer que las cosas se muevan; es la capa de comportamiento que hace que la web sea interactiva."
