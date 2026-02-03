@@ -21,4 +21,4 @@ Actualmente, el repositorio se organiza de la siguiente manera:
 > "JavaScript no es solo hacer que las cosas se muevan; es la capa de comportamiento que hace que la web sea interactiva."
 
 ---
-*🚀 Documentando mi porceso:[ToniAlpe](https://github.com/ToniAlpe)*
+*🚀 Documentando mi porceso: [ToniAlpe](https://github.com/ToniAlpe)*
