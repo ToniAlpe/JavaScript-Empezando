@@ -195,33 +195,57 @@ console.log(c > a || d < b);
 
 // 5. Niegame algo de los anteriores para que de el valor contrario pillin.
 
-
+console.log(!(c > a || d < b));
 
 // 6. Si te ves valiente usa el operador ternario para que en un condicional anterior si es true muestre un mensaje y si es false otro.
 // Si el profe se rie con el mensaje caen mas puntos obviamente.
+
+
+
+
 
 
 /*
 EJERCICIO 3-STRINGS
 */
 
+
 // 1. Concatena dos cadenas de texto
+
+let cadena = "Antonio";
+let cadena2 = "19";
+console.log(`Hola, me llamo ${cadena} y tengo ${cadena2} años.`);
 
 // 2. Muestra la longitud de una cadena de texto
 
+console.log(cadena.length);
+
 // 3. Muestra el primer y último carácter de un string
+
+console.log(cadena[0]);
+console.log(cadena[6]);
 
 // 4. Crea una cadena de texto en varias líneas
 
+
+
 // 5. Interpola tu nombre y edad -> 'Hola mi nombre es ....... y tengo ........ años. (Usa variables)
+
+cadena = "Antonio";
+cadena2 = "19";
+console.log(`Hola, me llamo ${cadena} y tengo ${cadena2} años.`);
 
 // 6. Convierte la cadena anterior a mayusculas y a minusculas
 
+
 // 7. Reemplaza todos los espacios en blanco de un string por guion bajos.
+
 
 // 8. Mira si tu string tiene una palabra concreta.
 
+
 /*
+
 EJERCICIO 4-ARRAYS
 */
 
