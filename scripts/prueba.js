@@ -201,10 +201,6 @@ console.log(!(c > a || d < b));
 // Si el profe se rie con el mensaje caen mas puntos obviamente.
 
 
-
-
-
-
 /*
 EJERCICIO 3-STRINGS
 */
@@ -227,7 +223,13 @@ console.log(cadena[6]);
 
 // 4. Crea una cadena de texto en varias líneas
 
+const cadenaMultilinea = `
+Esta es la línea 1
+Esta es la línea 2
+Esta es la línea 3
+`;
 
+console.log(cadenaMultilinea);
 
 // 5. Interpola tu nombre y edad -> 'Hola mi nombre es ....... y tengo ........ años. (Usa variables)
 
@@ -237,12 +239,18 @@ console.log(`Hola, me llamo ${cadena} y tengo ${cadena2} años.`);
 
 // 6. Convierte la cadena anterior a mayusculas y a minusculas
 
+console.log(cadena.toUpperCase());
+console.log(cadena.toLowerCase());
 
 // 7. Reemplaza todos los espacios en blanco de un string por guion bajos.
+let cadena3 = "Hola Mundo de JavaScript";
+console.log(cadena3.replaceAll(" ", "_"));
 
 
 // 8. Mira si tu string tiene una palabra concreta.
 
+console.log(cadena.includes("Antonio"));
+console.log(cadena.includes("Hola"));
 
 /*
 
