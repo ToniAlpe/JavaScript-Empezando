@@ -74,12 +74,13 @@ numeros[3]=58;
 console.log(numeros);
 
 //Le damos los valores mientras lo creamos
-let arrayEj =
-["German",
-"Martinez",
-"ticher", 
-37,
-true]
+let arrayEj = [
+    "German",
+    "Martinez",
+    "ticher", 
+    37,
+    true
+];
 
 console.log(arrayEj);
 

@@ -164,3 +164,26 @@ o Respuesta: Obviamente que sí, vaya pregunta.*/
 
 let pregunta = prompt("haz una pregunta a la bola 8 mágica");
 
+//Respuestas proporcionadas por la IA (me daba mucha pereza)
+let respuestas = [
+    "Obviamente que sí, vaya pregunta…",
+    "No lo creo, mejor intenta de nuevo.",
+    "Tal vez… pero yo estaría preocupado si fuera tú.",
+    "¡Claro! Pero no digas que yo te lo dije.",
+    "Mmm… las estrellas dicen que no.",
+    "Definitivamente, sí… o tal vez no, depende del café.",
+    "Pregunta más seria, por favor, estoy cansada de esto.",
+    "¡Sí! Pero solo si bailas mientras lo dices."
+];
+
+//Esto hace lo mismo pero no es escalable porque si yo añado algo al array tengo que modificar la variable
+/*let min = 0;
+let max = 7;
+
+let indiceAleatorio = Math.floor(Math.random() * (7 - 0 + 1)) + 0;
+
+console.log(indiceAleatorio); // un número entre 0 y 7*/
+
+//Esto está mejor (ayudado por la IA)
+let indice = Math.floor(Math.random() * respuestas.length);
+alert(respuestas[indice]);
