@@ -1,10 +1,12 @@
 // ---- ASAMBLEA ----
+
 //alert ("Hola Mundo") No funciona porque es un visualizador (solo funciona en navegadores)
 console.log ("Hola Mundo");
 
 //let correcta = "ok"; No hace falta declarar las variables (en este caso es un String, en un programa grande a lo mejor se rompe)
 
 // --- VARIABLES ---
+
 let VariableReasignable = "Soy una variable reasignable.";
 const constante = "Soy una constante";
 
@@ -16,6 +18,7 @@ VariableReasignable = 2; //Cambio de variable (no hay que hacer un casting como 
 console.log(VariableReasignable);
 
 // --- NO HACER ---
+
 //constante = 100;
 //console.log (constante);
 

@@ -1,0 +1,169 @@
+//--- IF, ELSE IF y ELSE ---
+let semaforo = "verde";
+
+if (semaforo === "verde") {
+console.log("Puede pasar");
+} else if (semaforo === "rojo") {
+    console.log("No puedes pasar");
+} else {
+    console.log("Puedes pasar pero con cuidado");
+}
+
+//--- SWITCH ---
+
+semaforo = "Verde"
+
+switch (true) {
+    case semaforo === "Verde":
+        console.log("Puedes pasar");
+    break;
+    case semaforo === "Amarillo":
+        console.log("Puedes pasar pero con cuidado");
+    break;
+    case semaforo === "Rojo":
+        console.log("No puedes pasar");
+    break;
+}
+
+let a = 10;
+let b = 5;
+
+let mayor;
+
+if (a > b) {
+mayor = a; // Si a es mayor que b, asigna a
+} else {
+mayor = b; // Si no, asigna b
+}
+console.log(mayor); // 10 (porque a > b)
+
+//Esto de aqui abajo es lo mismo solo que es un ternario
+
+mayor = a > b ? a : b; // Si a > b, asigna a; de lo contrario, asigna b
+console.log(mayor); // 10 (porque a > b)
+
+//--- MATH.RANDOM ---
+
+//1
+let numeroAleatorio = Math.random();
+console.log(numeroAleatorio); // Ejemplo: 0.3273948374
+
+//imagina que quiero un numero entre el 5 y el 15. (restar el maximo menos ell minimo mas 1 y luego lo que te de le sumas el minimo)
+
+//2
+let numeroAleatorioEntero=numeroAleatorio*((15-5+1)+5);
+console.log(numeroAleatorioEntero); // Ejemplo: 8.9567763
+
+//Ahora toca quitarle los decimales
+
+//3
+let numeroAleatorioEnteroSinDec = Math.floor(numeroAleatorioEntero) //El math.floor t elo redondea para abajo (por eso la importancia de antes de sumar 1)
+console.log(numeroAleatorioEnteroSinDec); // Ejemplo: 8
+
+//--- ARRAYS ---
+
+//-- Declaración --
+
+//Crear el array y luego asignarle valores
+let numeros=[];
+numeros[0]=25;
+numeros[1]=36;
+numeros[2]=21;
+numeros[3]=58;
+
+console.log(numeros);
+
+//Le damos los valores mientras lo creamos
+let arrayEj =
+["German",
+"Martinez",
+"ticher", 
+37,
+true]
+
+console.log(arrayEj);
+
+// Forma tradicional (no se suele usar en Javascript)
+const lista = new Array("a", "b", "c"); // Array con 3 elementos
+lista = new Array(3); // Array vacío de tamaño 3
+
+//Acceso a elementos
+let letras = ["a", "b", "c"];
+console.log(letras.length); // 3
+console.log(letras[0]); // 'a'
+console.log(letras[2]); // 'c'
+console.log(letras[5]); // undefined
+
+//-- Modificar un array --
+
+//Recuerdas el array de German, Martinez... Pues lo he cambiado
+
+//Podemos cambiar directamente el Array dándole nuevos valores
+array=["Antonio", "Martinez", "paquete", 16, false]
+console.log(array);
+
+//Podemos modificar valores dentro de nuestro Array.
+array[1]="Almagro"
+console.log(array);
+console.log(array.length); //5
+
+//Y podemos añadir datos de manera fácil y sencilla
+array[5]="Dato nuevo"
+console.log(array);
+console.log(array.length); //6
+
+//Otra manera (es como si estuvieras haciendo el arry[6] = "Dato nuevo nuevo")
+array[(array.length)]="Dato nuevo nuevo"
+console.log(array);
+
+//No se puede eliminar elementos del Array de manera directa, hay que utilizar el metodo splice
+
+//-- Metodos 1 --
+//push, pop, unshift y shift
+let elementos = ["a", "b", "c"];
+elementos.push("d"); // ['a', 'b', 'c', 'd'] Añade un nuevo elemento al FINAL del array y devuelve la longitud de esta
+elementos.pop(); // ['a', 'b', 'c'] Elimina el ULTIMO elemento y devuelve el array
+elementos.unshift("Z"); // ['Z', 'a', 'b', 'c'] Añade uno o varios elementos al PRINCIPIO del array y devuelve la nueva longitud
+elementos.shift(); // ['a', 'b', 'c'] Elimina el PRIMER elemento y devuelve el array
+
+//-- Eliminar varios elementos --
+
+let numero = [0,1,2,3,4];
+array.splice(1, 3); // Elimina 3 elementos desde la posición 1 (posicion, elementos)
+console.log(array); // [0, 4]
+
+//-- Ordenar elemntos --
+
+let numero1 = [0,6,8,2,4];
+array.sort(); // Ordena los elementos, también funciona con letras
+console.log(array); // [0, 2, 4, 6, 8]
+
+//-- Concatenar elemntos
+
+let numeros1 = [0,6,8,2,4];
+let numeros2= [1,2,5,6,9]
+let arrayTotal=numeros1.concat(numeros2); // Une los dos arrays.
+console.log(arrayTotal); //[0, 6, 8, 2, 4, 1, 2, 5, 6, 9]
+
+//-- Usos de arrays en el DOM
+
+let coche=[];
+coche[0]="Leon";
+coche[1]="Seat";
+coche[2]=5;
+coche[3]="V6";
+document.body.innerHTML += ("<ul>"+
+"<li>"+coche[0]+"</li>"+
+"<li>"+coche[1]+"</li>"+
+"<li>"+coche[2]+"</li>"+
+"<li>"+coche [3]+"</li>"+
+"</ul>");
+
+let coche=["Leon", "Seat", 5, "V6"];
+document.body.innerHTML += (`<ul>
+<li>${coche[0]}</li>
+<li>${coche[1]}</li>
+<li>${coche[2]}</li>
+<li>${coche[3]}</li>
+</ul>`
+);

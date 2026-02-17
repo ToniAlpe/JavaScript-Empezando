@@ -15,4 +15,4 @@ document.write("<h1>Hola mundo</h1>");*/
 
 // SI FUNCIONA
 let nombre = "German"
-document.body.innerHTML += `Hola mundo ${nombre}`;
+document.body.innerHTML += `Hola mundo ${nombre}`; //Escribe en el propio html
