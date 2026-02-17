@@ -162,3 +162,5 @@ o Ej:
 o Pregunta: ¿Es el ticher un mamomcete?
 o Respuesta: Obviamente que sí, vaya pregunta.*/
 
+let pregunta = prompt("haz una pregunta a la bola 8 mágica");
+
