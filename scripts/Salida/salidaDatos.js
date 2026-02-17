@@ -1,4 +1,4 @@
-/*console.log("HoliwiUWU");
+console.log("HoliwiUWU");
 
 console.info("Soy INFO")
 //Mensaje informativo.
@@ -11,8 +11,8 @@ console.error("Ya has roto algo")
 
 /* NO FUNCIONA
 document.write("Hola mundo");
-document.write("<h1>Hola mundo</h1>");*/
+document.write("<h1>Hola mundo</h1>");/*
 
 // SI FUNCIONA
-/*let nombre = "German"
-document.body.innerHTML += `Hola mundo ${nombre}`;*/
+let nombre = "German"
+document.body.innerHTML += `Hola mundo ${nombre}`;
