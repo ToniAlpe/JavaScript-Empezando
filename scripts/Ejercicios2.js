@@ -186,3 +186,67 @@ console.log(indiceAleatorio); // un número entre 0 y 7*/
 //Esto está mejor (ayudado por la IA)
 let indice = Math.floor(Math.random() * respuestas.length);
 alert(respuestas[indice]);
+
+/*Haz un programa que pida al usuario su sueldo mensual. Si gana menos de 
+1000€, no paga impuestos. Si gana entre 1000€ y 2000€, paga un 10%. Si gana 
+más de 2000€, paga un 20%. Calcula y muestra cuánto debe pagar y lo que le 
+queda.*/
+
+let sueldo = prompt("Introduce tu sueldo mensual en €:");
+
+let porcentaje = 0;
+let impuestos = 0;
+let sueldoNeto = 0;
+
+if (sueldo < 1000) {
+    porcentaje = 0;
+} else if (sueldo >= 1000 && sueldo <= 2000) {
+    porcentaje = 0.10;
+} else {
+    porcentaje = 0.20;
+}
+
+impuestos = sueldo * porcentaje;
+sueldoNeto = sueldo - impuestos;
+
+alert(`Impuestos a pagar: ${impuestos}€\nSueldo neto: ${sueldoNeto}€`);
+
+/*Pide al usuario su peso y altura. Calcula su IMC con la fórmula IMC = peso 
+/ (altura * altura). 
+o Si el IMC es menor a 18.5, muestra "Bajo peso". 
+o Entre 18.5 y 24.9, muestra "Peso normal". 
+o Entre 25 y 29.9, muestra "Sobrepeso". 
+o Más de 30, muestra "Obesidad". 
+o Si pones un número menor que 0 o mayor que 50 que ponga “Es 
+imposible” */
+
+let peso = prompt("Introduce tu peso en kg (ej: 75):");
+let altura = prompt("Introduce tu altura en metros (ej: 1.75):");
+
+let imc = peso / (altura * altura);
+let mensaje = "";
+
+if (imc < 0 || imc > 50) {
+    alert("Es imposible");
+}
+
+if (imc < 18.5) {
+    mensaje = "Bajo peso";
+} else if (imc >= 18.5 && imc <= 24.9) {
+    mensaje = "Peso normal";
+} else if (imc >= 25 && imc <= 29.9) {
+    mensaje = "Sobrepeso";
+} else {
+    mensaje = "Obesidad";
+}
+
+alert(`Tu IMC es: ${imc}: ${mensaje}`);
+//alert("Tu IMC es: " + imc + ": " + mensaje); Hay que acostumbrarse a hacerlo como el de arriba
+
+/*Crea un juego con preguntas de opción múltiple. El usuario debe 
+responder escribiendo 1, 2 o 3, o a,b,c,…. Cada respuesta correcta suma 
+10 puntos. Al final, el programa debe mostrar la puntuación total. 
+o Idea: Si te gusta Harry Potter puedes decidir si un alumno va a ir a 
+una de las casas.*/
+
+let 
