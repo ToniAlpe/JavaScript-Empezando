@@ -1,5 +1,5 @@
 //Haz un programa que solicite un número al usuario. Luego, determina si el número es par o impar y muestra el resultado en la consola
-let numero = prompt("Escribe cualquier número");
+let numero = prompt("Escribe cualquier número (para saber si es par o impar");
 
 if (numero % 2 == 0) {
     alert("Es par");
@@ -27,7 +27,7 @@ if (edad >=18) {
 correspondiente (1 = lunes, 2 = martes, etc.). Si el número no está en el rango,
 muestra un mensaje de error*/
 
-let dia = prompt("Introduce un número (1-7)")
+let dia = prompt("Introduce un número (1-7) (ej. 1 = lunes)")
 
 switch (true) {
     case dia == 1:
@@ -149,7 +149,7 @@ let adivinarNumero = prompt("Adivina el número que ha salido de un dado (1-6)")
 
 if (numeroAleatorioEnteroSinDec == adivinarNumero) {
     alert("¡Enhorabuena, ganaste 1 abracito!")
-} else if (adivinarNumero >= 7 || adivinarNumero <= 0) {
+} else if (adivinarNumero >= 7 || adivinarNumero <= 0) { //Mayor igual que 7 O menor igual que 0
     alert("Eres gilipollas o que? Has leido la PUTA instrucción?")
 } else {
     alert("Fallaste paquete, el número era: " + numeroAleatorioEnteroSinDec)
