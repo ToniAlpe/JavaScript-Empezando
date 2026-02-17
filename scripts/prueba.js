@@ -262,20 +262,57 @@ EJERCICIO 4-ARRAYS
 
 // 1. Crea un array que almacene cinco animales y muestralo como lista en tu HTML.
 
+let animales=["Leon", "Oso", "Elefante", "Perro", "Gato"];
+document.body.innerHTML += (`<ul>
+<li>${animales[0]}</li>
+<li>${animales[1]}</li>
+<li>${animales[2]}</li>
+<li>${animales[3]}</li>
+<li>${animales[4]}</li>
+</ul>`
+);
+
 // 2. Añade dos más. Uno al principio y otro al final
+
+animales.push("Pajaro"); //Al final
+animales.unshift("Zorro"); //Al principio
 
 // 3. Elimina el que se encuentra en tercera posición
 
+animales.slice(3);
+console.log(animales);
+
 // 4. Muestra en consola la cantidad de elementos que tiene el array
+
+console.log(animales.length);
 
 // 5. Accede e imprime el segundo y el último elemento del array
 
+const segundoElemento = animales[1];
+console.log("Segundo elemento:", segundoElemento);
+
+const ultimoElemento = animales[miArray.length - 1];
+console.log("Último elemento:", ultimoElemento);
+
 // 6. Modifica el tercer elemento del array por "Panda"
+
+animales[2] = "Panda"
+console.log(animales);
 
 // 7. Elimina el primer elemento del array con shift() y muéstralo
 
+animales.shift();
+
 // 8. Ordena el array alfabéticamente y muéstralo
+
+animales.sort();
 
 // 9. Invierte el orden del array y muéstralo
 
+animales.reverse();
+console.log(animales);
+
 // 10. Comprueba si "Tigre" está en el array con indexOf() e includes(), e imprime el resultado
+
+console.log(animales.includes("Tigre"));
+console.log(animales.includes("Tigre"));
