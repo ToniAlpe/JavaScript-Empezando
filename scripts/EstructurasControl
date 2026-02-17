@@ -156,7 +156,7 @@ document.body.innerHTML += ("<ul>"+
 "<li>"+coche[0]+"</li>"+
 "<li>"+coche[1]+"</li>"+
 "<li>"+coche[2]+"</li>"+
-"<li>"+coche [3]+"</li>"+
+"<li>"+coche[3]+"</li>"+
 "</ul>");
 
 let coche=["Leon", "Seat", 5, "V6"];
