@@ -181,7 +181,6 @@ let respuestas = [
 let max = 7;
 
 let indiceAleatorio = Math.floor(Math.random() * (7 - 0 + 1)) + 0;
-
 console.log(indiceAleatorio); // un número entre 0 y 7*/
 
 //Esto está mejor (ayudado por la IA)
