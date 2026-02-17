@@ -59,8 +59,12 @@ switch (true) {
 /*Haz un script que pida al usuario dos números y determine cuál es el mayor
 o si son iguales. Muestra el resultado en la consola*/
 
-let a = prompt("Introduce un número");
-let b = prompt("Introduce otro número");
+//Si pongo esto me daria un String por defecto por lo que si pongo por ejemplo 5 y 100 a lo mejor me dice que 5 es mayor que 100
+/*let a = prompt("Introduce un número");
+let b = prompt("Introduce otro número");*/
+
+let a = Number(prompt("Introduce un número"));
+let b = Number(prompt("Introduce otro número"));
 
 if (a > b) {
     alert("El numero " + a + " es mayor que " + b);
