@@ -11,7 +11,7 @@ console.error("Ya has roto algo")
 
 /* NO FUNCIONA
 document.write("Hola mundo");
-document.write("<h1>Hola mundo</h1>");/*
+document.write("<h1>Hola mundo</h1>");*/
 
 // SI FUNCIONA
 let nombre = "German"
