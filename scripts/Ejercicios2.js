@@ -91,7 +91,7 @@ switch (true) {
         alert("Enero --> Tiene 31 días");
     break;
     case mes == 2:
-        alert("Febrero --> Tiene 30 días");
+        alert("Febrero --> Tiene 28 días");
     break;
     case mes == 3:
         alert("Marzo --> Tiene 31 días");
