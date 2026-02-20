@@ -227,7 +227,7 @@ imposible” */
 let peso = prompt("Introduce tu peso en kg (ej: 75):");
 let altura = prompt("Introduce tu altura en metros (ej: 1.75):");
 
-let imc = peso / (altura * altura);
+let imc = peso / (altura * altura);//Tambien se pude hacer asi --> (altura**2)
 let mensaje = "";
 
 if (imc < 0 || imc > 50) {
