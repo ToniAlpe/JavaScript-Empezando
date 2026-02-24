@@ -124,45 +124,117 @@ row += "* ";
 document.write(`<p>${row}<p>`);
 }*/
 
+//--- EJERCICIOS ---
 //Imprime numeros 1 al 20
 
-for (let i = 0; i <= 20; i++) {
-    console.log("Valor de i:", i);
-}
+// for (let i = 0; i <= 20; i++) {
+//     console.log("Valor de i:", i);
+// }
 
-//Suma 1 al 100
+// //Suma 1 al 100
 
-let suma = 0;
-for (let i = 1; i <= 100; i++) {
-  suma += i; // Aumenta la suma con el valor actual de i
-}
-console.log("La suma de los números del 1 al 100 es: " + suma);
+// let suma = 0;
+// for (let i = 1; i <= 100; i++) {
+//   suma += i; // Aumenta la suma con el valor actual de i
+// }
+// console.log("La suma de los números del 1 al 100 es: " + suma);
 
-//Crea un bucle que imprima todos los números pares entre 1 y 50
+// //Crea un bucle que imprima todos los números pares entre 1 y 50
 
-for (let i = 2; i <= 50; i += 2) {
-  console.log(i);
-}
+// for (let i = 2; i <= 50; i += 2) {
+//   console.log(i);
+// }
 
-//Dado un array de nombres, usa un bucle para imprimir cada nombre en la consola (recuerda, se utiliza el for of para imprimir por pantalla los nombres y el for in los indices)
+// //Dado un array de nombres, usa un bucle para imprimir cada nombre en la consola (recuerda, se utiliza el for of para imprimir por pantalla los nombres y el for in los indices)
 
-let arrayNombre = [
-    "German",
-    "Antonio",
-    "Nacho", 
-    "Luis"
-];
+// let arrayNombre = [
+//     "German",
+//     "Antonio",
+//     "Nacho", 
+//     "Luis"
+// ];
 
-for (let elemento of arrayNombre) {
-    console.log(elemento);
-}
+// for (let elemento of arrayNombre) {
+//     console.log(elemento);
+// }
 
-/*for (let posicion in arrayNombre) {
-    console.log(posicion);
-}*/
+// /*for (let posicion in arrayNombre) {
+//     console.log(posicion);
+// }*/
 
 //Escribe un bucle que cuente el número de vocales en una cadena de texto
-
-for (let contador of texto) {
+// while (true){
+//     let texto = prompt("Añade la palabra: ")
+//     let contador = 0;
+//     for (let letra of texto) {
+//         if ("aeiouáéíóúü".includes(letra.toLowerCase())){
+//             contador++
+//         }
     
+//     }
+//     if (texto=="salir"){
+//         break
+//     }
+//     console.log(contador);
+// }
+
+//Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto
+
+// let numeros = [1,7,9,5,6,7];
+// let producto = 1;
+
+// for (let i = 0; i < numeros.length; i++) {
+//   producto *= numeros[i];
+// }
+// console.log("El producto total es:", producto);
+
+//Escribe un bucle para hacer la tabla de multiplicar del 7
+
+// let numero = 7;
+// for (let i = 1; i <= 10; i++) {
+//   console.log(numero + "X" + i + "=" + numero * i);
+//   //console.log(`${numero} x ${i} = ${numero * i}`);
+// }
+
+//Crea un bucle que genere los 10 primeros números de la secuencia de Fibonacci (no terminado)
+
+// let fibonacci = [
+//     0, 
+//     1, 
+//     1, 
+//     2, 
+//     3, 
+//     5, 
+//     8, 
+//     13,
+//     21, 
+//     34, 
+//     55, 
+//     89, 
+//     144,
+//     233, 
+//     377, 
+//     610, 
+//     987, 
+//     1597, 
+//     2584, 
+//     4181, 
+//     6765, 
+//     10946
+// ];
+
+// for (let sucesion of fibonacci) {
+//     console.log(sucesion);
+// }
+
+//Haz un bucle para invertir una cadena de texto o un array lo que más coraje te dé.
+
+let cadena = prompt("Hola mundo");
+let invertido = "";
+
+//Mirar si se puede con el for each
+for (let i = original.length - 1; i >= 0; i--) {
+    invertida += original[i];
 }
+console.log("Texto normal: "+texto);
+console.log("Texto invertido: "+ invertido);
