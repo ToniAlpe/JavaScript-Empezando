@@ -229,7 +229,7 @@ document.write(`<p>${row}<p>`);
 
 //Haz un bucle para invertir una cadena de texto o un array lo que más coraje te dé.
 
-let cadena = prompt("Hola mundo");
+let cadena = promp("Introduzca una cadena de texto");
 let invertido = "";
 
 //Mirar si se puede con el for each
