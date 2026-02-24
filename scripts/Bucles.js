@@ -1,0 +1,168 @@
+//--- BUCLES ---
+
+//-- WHILE --
+
+/*while (condición) {
+// Código a ejecutar
+}*/
+
+/*let i = 0; // Variable CONTADOR
+// CONDICION
+while (i < 5) {
+console.log("Valor de i:", i);
+// ITERACION
+i++; // INCREMENTO
+}
+
+//CONTADOR
+let i = 0;
+while (i < 10) {
+console.log("El número es " + i);
+i++;
+}
+
+//Validación de datos
+let edad = prompt("Introduce tu edad");
+while (edad < 0 || isNaN(edad)) {
+edad = prompt("Introduce tu edad");
+}
+
+//Entrada y comprobación
+let secreta = "eureka";
+let intento = "";
+while (intento !== secreta) {
+intento = prompt("¿Qué palabra es?");
+}
+
+//-- DO-WHILE --
+
+/*let i = 1;
+do {
+console.log("Hola a todos");
+i++;
+console.log(i);
+} while (i < 5);
+console.log("Bucle finalizado");*/
+
+//Confirmar usuario
+/*let i = 1;
+let respuesta;
+do {
+respuesta = confirm("¿Desea salir? Intento " + i);
+i++;
+} while (respuesta !== true);
+
+//Valudacion de usuario
+let usuario;
+const usuarioReal="Geremin";
+do {
+usuario = prompt("Indica su usuario.");
+} while (usuario!==usuarioReal);
+Document.write(`<h1>Bienvenido ${usuario}</h1>`)
+
+// --- FOR ---
+
+/*for (inicialización; condición; incremento) {
+// Código a ejecutar
+}*/
+
+/*for (let i = 0; i < 5; i++) {
+console.log("Valor de i:", i);
+}
+//Es los mismo que esto
+/*let i = 0;
+while (i < 5) {
+console.log("Valor de i:", i);
+i++;
+}*/
+
+/*let lenguajes = ["HTML", "CSS", "JavaScript"];
+// for basico-->Solo para arrays
+//Recorre el array sabiendo su longitud (length).
+for (let i = 0; i < lenguajes.length; i++) {
+document.write(`<input type='button' value='${lenguajes[i]}'>`);
+}
+//for....in--> Funciona en arrays y objetos, no en colecciones
+//Recorre el array a través de sus índices.
+for (let posicion in lenguajes) {
+document.write(`<input type='button' value='${lenguajes[posicion]}'>`);
+}
+// for...of--> Funciona en arrays y colecciones, no en objetos.
+//Recorre los valores sin necesidad de saber sus índices.
+for (let elemento of lenguajes) {
+document.write(`<input type='button' value='${elemento}'>`);*/
+
+//do while 1
+/*let i = 0;
+
+do {
+    console.log("El número es " + i);
+    i++;
+} while (i < 10);
+
+//do while 2
+let edad;
+do {
+edad = prompt("Introduce tu edad");
+} while (edad < 0 || isNaN(edad));
+
+
+//do while 3
+let secreta = "eureka";
+let intento;
+do {
+intento = prompt("¿Qué palabra es?");
+} while (intento !== secreta);
+
+//--- Bucles anidados ---
+
+for (let i = 0; i < 3; i++) { // Filas
+let row = "";
+for (let j = 0; j < 3; j++) { // Columnas
+row += "* ";
+}
+document.write(`<p>${row}<p>`);
+}*/
+
+//Imprime numeros 1 al 20
+
+for (let i = 0; i <= 20; i++) {
+    console.log("Valor de i:", i);
+}
+
+//Suma 1 al 100
+
+let suma = 0;
+for (let i = 1; i <= 100; i++) {
+  suma += i; // Aumenta la suma con el valor actual de i
+}
+console.log("La suma de los números del 1 al 100 es: " + suma);
+
+//Crea un bucle que imprima todos los números pares entre 1 y 50
+
+for (let i = 2; i <= 50; i += 2) {
+  console.log(i);
+}
+
+//Dado un array de nombres, usa un bucle para imprimir cada nombre en la consola (recuerda, se utiliza el for of para imprimir por pantalla los nombres y el for in los indices)
+
+let arrayNombre = [
+    "German",
+    "Antonio",
+    "Nacho", 
+    "Luis"
+];
+
+for (let elemento of arrayNombre) {
+    console.log(elemento);
+}
+
+/*for (let posicion in arrayNombre) {
+    console.log(posicion);
+}*/
+
+//Escribe un bucle que cuente el número de vocales en una cadena de texto
+
+for (let contador of texto) {
+    
+}

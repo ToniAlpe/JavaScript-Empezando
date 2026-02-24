@@ -1,3 +1,6 @@
+//ctrl + k + c pones comentarios
+//ctrl + k + u quita los comentarios
+
 // ---- ASAMBLEA ----
 
 //alert ("Hola Mundo") No funciona porque es un visualizador (solo funciona en navegadores)
