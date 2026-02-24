@@ -229,12 +229,16 @@ document.write(`<p>${row}<p>`);
 
 //Haz un bucle para invertir una cadena de texto o un array lo que más coraje te dé.
 
-let cadena = promp("Introduzca una cadena de texto");
-let invertido = "";
+// let cadena = promp("Introduzca una cadena de texto");
+// let invertido = "";
 
-//Mirar si se puede con el for each
-for (let i = original.length - 1; i >= 0; i--) {
-    invertida += original[i];
-}
-console.log("Texto normal: "+texto);
-console.log("Texto invertido: "+ invertido);
+// //Mirar si se puede con el for each
+// for (let i = original.length - 1; i >= 0; i--) {
+//     invertida += original[i];
+// }
+// console.log("Texto normal: "+texto);
+// console.log("Texto invertido: "+ invertido);
+
+//--- PATTERN PRINT ---
+
+//Triángulo de asteriscos
