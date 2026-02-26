@@ -242,3 +242,58 @@ document.write(`<p>${row}<p>`);
 //--- PATTERN PRINT ---
 
 //Triángulo de asteriscos
+let asteriscos = 5;
+for (let i=1; i<=asteriscos; i++){
+    let fila="";
+    for (let j=1; j<=i; j++){
+        fila += "*";
+    }
+    console.log(fila);
+}
+console.log("------------");
+//TRIANGULO INVERTIDO DE ASTERISCOS
+let asteriscos1 = 5;
+for (let i=asteriscos1; i>=1; i--){
+    let fila="";
+    for (let j=1; j<=i; j++){
+        fila += "*";
+    }
+    console.log(fila);
+}
+console.log("------------");
+//CUADRADO DE ASTERISCOS 5X5
+let asteriscos3 = 5;
+
+for (let i = 0; i < asteriscos2; i++) {
+  let fila = "";
+  for (let j = 0; j < asteriscos2; j++) {
+    fila += "*";
+  }
+  console.log(`${fila} \n`);
+}
+console.log("------------");
+
+//NUMEROS EN ORDEN ASCENDENTE
+let numerosAsc = 5;
+
+for (let i = 1; i <= numerosAsc; i++) {
+  let fila = "";
+  for (let j = 1; j <= i; j++) {
+    fila += j; 
+  }
+  console.log(fila);
+}
+console.log("------------");
+
+//NUMEROS EN ORDEN DESCENDIENTE
+let numerosDesc = 5;
+
+for (let i = numerosDesc; i >= 1; i--) {
+  let fila = "";
+  
+  for (let j = 1; j <= i; j++) {
+    fila += j;
+  }
+  
+  console.log(fila);
+}
