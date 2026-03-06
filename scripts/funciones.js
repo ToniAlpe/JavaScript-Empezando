@@ -4,38 +4,38 @@
 
 /*function nombreFuncion (//parametro1, parametro2,...)
 {
-//AQUI LAS INSTRUCCIONES DE LA FUNCION
+AQUI LAS INSTRUCCIONES DE LA FUNCION
 }*/
 
-// function saludar() {
-// console.log("Hola, soy una función");
-// }
-// // Ejecución de la función
-// //Como vemos se ejecuta la funcion llamandola por su nombre seguido de ()
-// saludar();
+function saludar() {
+console.log("Hola, soy una función");
+}
+// Ejecución de la función
+//Como vemos se ejecuta la funcion llamandola por su nombre seguido de ()
+saludar();
 
-// // -- Ejemplos --
+// -- Ejemplos --
 
-// //Funcion para calcular el iva
-// function SumarIVA (cantidad, porcentaje)
-// {
-// let total;
-// total=cantidad+cantidad*porcentaje/100;
-// alert(total);
-// }
-// SumarIVA (400,18);
+//Funcion para calcular el iva
+function SumarIVA (cantidad, porcentaje)
+{
+let total;
+total=cantidad+cantidad*porcentaje/100;
+alert(total);
+}
+SumarIVA (400,18);
 
-// //Funcion para saber cual es mayor
-// function ElMayor (num1, num2)
-// {
-// if(num1>num2)
-// {
-// alert(num1+" es el mayor");
-// }else{
-// alert(num2+" es el mayor");
-// }
-// }
-// ElMayor (4,7);
+//Funcion para saber cual es mayor
+function ElMayor (num1, num2)
+{
+if(num1>num2)
+{
+alert(num1+" es el mayor");
+}else{
+alert(num2+" es el mayor");
+}
+}
+ElMayor (4,7);
 //Le pasamos los parametras cuando llamamos la funcion
 
 // -- Devoluciones de valores --
