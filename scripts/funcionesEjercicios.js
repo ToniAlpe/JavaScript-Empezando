@@ -154,7 +154,7 @@ function lanzarDado() {
     const imgElemento = document.getElementById("imagen-dado");
     
     // 3. "dice" seguido del número (las imagenes de los dados)
-    imgElemento.src = `../JavaScript-Empezando/dados/dice${resultado}.png`; 
+    imgElemento.src = `dados/dice${resultado}.png`; 
     
     // 4. (Opcional) Mostrar un mensaje en la consola para comprobar
     console.log("Ha salido el archivo: dice" + resultado + ".png");
