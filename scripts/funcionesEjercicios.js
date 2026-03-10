@@ -89,6 +89,7 @@ function genContrasena(longitud) {
     const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
     let contrasena = "";
 
+    //Bucle ayudado por la IA
     for (let i = 0; i < longitud; i++) {
         let indiceAzar = Math.floor(Math.random() * caracteres.length);
         contrasena += caracteres.charAt(indiceAzar);
@@ -99,7 +100,7 @@ function genContrasena(longitud) {
 console.log(genContrasena(15));
 
 //INTERACCION CON HTML 
-//Ejercicio 1
+//Ejercicio 1 (he tenido que buscar informacion sobre lo del create element y del appendChild)
 let textoEnlace = prompt("Introduce el texto: ");
 let direccionWeb = prompt("Introduce una web: ");
 let enlace = document.createElement("a")
