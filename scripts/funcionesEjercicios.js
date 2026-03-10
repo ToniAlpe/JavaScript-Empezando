@@ -144,7 +144,7 @@ for (let bebida of datos) {
 
 document.body.appendChild(desplegable);
 
-//HARD MODE
+//HARD MODE uso de la IA
 
 function lanzarDado() {
     // 1. Generamos el número aleatorio entre 1 y 6
