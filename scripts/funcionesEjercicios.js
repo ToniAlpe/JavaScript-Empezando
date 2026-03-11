@@ -160,3 +160,5 @@ function lanzarDado() {
     // 4. (Opcional) Mostrar un mensaje en la consola para comprobar
     console.log("Ha salido el archivo: dice" + resultado + ".png");
 }
+
+//Este comentario esta hecho el dia 11 de marzo en la hora del examen de entornos
