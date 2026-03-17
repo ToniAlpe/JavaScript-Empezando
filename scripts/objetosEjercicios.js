@@ -86,7 +86,7 @@ alumnos.forEach((alumno, index) => {
 
 //He tenido que utilizar la IA para hacerlo, no sabia como hacer la tabla
 // let tablaHTML = "<table border='1'>";
-// tablaHTML += "<tr><th>Nombre</th><th>Edad</th><th>Ciudad</th></tr>";
+// tablaHTML += "<tr><th>Nombre</th><th>Estilo de combate</th><th>Demonio que lo mataron</th></tr>";
 
 // pilares.forEach(pilar => {
 //     tablaHTML += "<tr>";
