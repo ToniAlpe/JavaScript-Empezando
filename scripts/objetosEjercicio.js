@@ -85,21 +85,33 @@ pilares.forEach((pilar, index) => {
 });
 
 //He tenido que utilizar la IA para hacerlo, no sabia como hacer la tabla
-let tablaHTML = "<table border='1'>";
-tablaHTML += "<tr><th>Nombre</th><th>Estilo de combate</th><th>Demonio que lo mataron</th></tr>";
+let tablaHTML = `
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Estilo de combate</th>
+                <th>Demonio que lo mató</th>
+            </tr>
+        </thead>
+        <tbody>
+`;
 
 pilares.forEach(pilar => {
-    tablaHTML += "<tr>";
-    tablaHTML += "<td>" + pilar.nombre + "</td>";
-    tablaHTML += "<td>" + pilar.estilo_combate + "</td>";
-    tablaHTML += "<td>" + pilar.demonio + "</td>";
-    tablaHTML += "</tr>";
+    tablaHTML += `
+        <tr>
+            <td>${pilar.nombre}</td>
+            <td>${pilar.estilo_combate}</td>
+            <td>${pilar.demonio}</td>
+        </tr>
+    `;
 });
 
-tablaHTML += "</table>";
-document.body.innerHTML += tablaHTML;
+tablaHTML += `</tbody></table>`;
 
-//Quita lo de antes si no esto no funcionará
+document.body.innerHTML = tablaHTML;
+
+//Quita lo de antes si no esto no funcionará (que comentes la tabla)
 let pilar3 = {
     nombre: "Tengen Uzui",
     edad: 23,
